@@ -21,12 +21,15 @@
         smooth=" true" smoothCount="5" smoothTolerance=".05" smoothThreshold="5" sourceWidth="800" sourceHeight="600"
         displayWidth="1280" displayHeight="720">
 
-
+        <a-assets>
+            <img id="img1" src="./assets/cat.png">
+        </a-assets> 
 
         <a-marker type='barcode' value='0'>
-            <a-text value="Hiiii! :3" side="double" position="0 0 -1" rotation="270 0 0" width="10" color="pink"
+            <a-text value="Hiiii!" side="double" position="0 0 -1" rotation="270 0 0" width="10" color="black"
                 align="center">
             </a-text>
+            <a-image src="#img1" rotation="270 0 0" width="2.5" height="2"></a-image>
         </a-marker>
 
         <a-entity camera></a-entity>
